@@ -51,6 +51,9 @@ namespace SelectionStatements
                 case "Art":
                     Console.WriteLine("The art of a people is a true mirror into their minds");
                     break;
+                case "Science":
+                    Console.WriteLine("Somewhere, something incredible is waiting to be known");
+                    break;
                 default:
                     Console.WriteLine("I haven't taken that subject before");
                     break;
