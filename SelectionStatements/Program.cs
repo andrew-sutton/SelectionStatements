@@ -30,11 +30,10 @@ namespace SelectionStatements
                 }
                 else { Console.WriteLine("Nevermind"); }
             }
-            var favSubject = FavoriteSubject();
-
-            Console.WriteLine(favSubject);
+            // Second part of the assignmnet, asking about school subjects
+            Console.WriteLine(FavoriteSubject());
         }
-        // Second part of the assignmnet, asking about school subjects
+        
         public static string FavoriteSubject()
         {
             Console.WriteLine("What is your favorite school subject?");
