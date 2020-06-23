@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace SelectionStatements
 {
@@ -29,34 +30,33 @@ namespace SelectionStatements
                 }
                 else { Console.WriteLine("Nevermind"); }
             }
-            // Second part of the assignmnet, asking about school subjects
+            var favSubject = FavoriteSubject();
+
+            Console.WriteLine(favSubject);
+        }
+        // Second part of the assignmnet, asking about school subjects
+        public static string FavoriteSubject()
+        {
             Console.WriteLine("What is your favorite school subject?");
 
-            var favoriteSubject = Console.ReadLine();
+            var favSubject = Console.ReadLine();
 
-            switch (favoriteSubject)
+            switch (favSubject)
             {
                 case "Math":
-                    Console.WriteLine("The highest form of pure thought is in mathematics - Plato");
-                    break;
+                    return "The highest form of pure thought is in mathematics - Plato";
                 case "Social Studies":
-                    Console.WriteLine("Do you like people?");
-                    break;
+                    return "Do you like people?";
                 case "Gym":
-                    Console.WriteLine("I think I see a proffessional athele");
-                    break;
+                     return "I think I see a proffessional athele";
                 case "History":
-                    Console.WriteLine("The more you know about the past, the better prepared you are for the future");
-                    break;
+                    return "The more you know about the past, the better prepared you are for the future";
                 case "Art":
-                    Console.WriteLine("The art of a people is a true mirror into their minds");
-                    break;
+                    return "The art of a people is a true mirror into their minds";
                 case "Science":
-                    Console.WriteLine("Somewhere, something incredible is waiting to be known");
-                    break;
+                    return "Somewhere, something incredible is waiting to be known";
                 default:
-                    Console.WriteLine("I haven't taken that subject before");
-                    break;
+                    return "I haven't taken that subject before";
             }
         }
     }
